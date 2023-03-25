@@ -8,7 +8,6 @@ btnPopUp.addEventListener('click', ()=>{
     dropMenu.classList.toggle('open');
 });
 
-
  
  
  
@@ -60,7 +59,36 @@ barClose.addEventListener('click', ()=>{
     sideBar.classList.remove('barOn');
     barClose.classList.remove('barOn');
 });
-
+// Điều khoản và chính sách bảo mật
+        var modal = document.getElementById("modal");
+        var openModalBtn = document.getElementById("open-modal-btn");
+        var closeModalBtn = document.getElementsByClassName("close")[0];
+    
+        var modal2 = document.getElementById("modal2");
+        var openModalBtn2 = document.getElementById("open-modal-btn2");
+        var closeModalBtn2 = document.getElementsByClassName("close2")[0];
+        openModalBtn.onclick = function() {
+        modal.style.display = "block";
+        }
+    
+        closeModalBtn.onclick = function() {
+        modal.style.display = "none";
+        }
+    
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        if (event.target == modal2) {
+        modal2.style.display = "none";
+        }
+        }
+        openModalBtn2.onclick = function() {
+        modal2.style.display = "block";
+        }
+        closeModalBtn2.onclick = function() {
+        modal2.style.display = "none";
+        }
 
 
 

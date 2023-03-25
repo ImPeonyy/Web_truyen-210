@@ -10,14 +10,6 @@ html{
     box-sizing: border-box;
 }
 
-.grid{
-    width: 1200px;
-}
-
-.grid__row{
-    display: flex;
-    flex-wrap: wrap;
-}
 h4{
     margin: 0 0;
 }
