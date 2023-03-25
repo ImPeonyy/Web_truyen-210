@@ -9,3 +9,18 @@ html{
     line-height: 1.6rem;
     box-sizing: border-box;
 }
+
+.grid{
+    width: 1200px;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+h4{
+    margin: 0 0;
+}
+h2{
+    margin: 10px 0;
+}

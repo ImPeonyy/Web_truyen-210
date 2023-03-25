@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/css/auth.css">
+</head>
+<body>
+    <div class="header-bar">
+        <nav>
+            <h1>Webname</h1>
+            <img id="auth" src="https://w7.pngwing.com/pngs/858/581/png-transparent-profile-icon-user-computer-icons-system-chinese-wind-title-column-miscellaneous-service-logo.png" alt="auth">
+        </nav>
+    </div>
+    <div class="avatar-title-box">
+        <h2 id="avatar-title">Avatar</h2>
+    </div>
+    <div class="avatar">
+        <div class="img-container">
+        <img id="avatar-img" src="https://anhdepfree.com/wp-content/uploads/2020/06/icon-ong-de-thuong.png" alt="avatar">
+        </div>
+    </div>
+    <div class="user-info">
+        <h2 id="user-info-title">Giới thiệu bản thân</h2>
+    </div>
+        <form>
+            <input type="text" id="user-info-input" value="Vui lòng nhập thông tin bản thân (;">
+        </form>
+    <div class="user-info2">
+        <h2 id="user-info-achievement">Thành tựu</h2>
+    </div>
+    <div class="follower-title-box">
+        <h2 id="follower-title">Người theo dõi</h2>
+    </div>
+    <div class="body-content">
+        <div class="follower">
+            <ul id="list">
+                <li>Người theo dõi 1</li>
+                <li>Người theo dõi 2</li>
+                <li>Người theo dõi 3</li>
+            </ul>
+        </div>
+        <div class="user-interact">
+            <table>
+                <tr>
+                    <th>Truyện đã đăng</th>
+                    <th>Truyện theo dõi</th>
+                    <th>Lượt tương tác</th>
+                </tr> 
+                <tr>
+                    <td class="col">Truyện đã đăng 1</td>
+                    <td class="col">Truyện theo dõi 1</td>
+                    <td class="col">Lượt tương tác 1</td>
+                </tr>
+                <tr>
+                    <td class="col">Truyện đã đăng 2</td>
+                    <td class="col">Truyện theo dõi 2</td>
+                    <td class="col">Lượt tương tác 2</td>
+                </tr>
+                <tr>
+                    <td class="col">Truyện đã đăng 3</td>
+                    <td class="col">Truyện theo dõi 3</td>
+                    <td class="col">Lượt tương tác 3</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button id="popupBtn">Liên hệ với admin</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Nhắn tin cho admin</h2>
+        <form id="popup-form">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Nội dung tin nhắn:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Gửi tin nhắn</button>
+        </form>
+        </div>
+    </div>
+    <script>
+    var popup = document.getElementById("popup");
+    var popupBtn = document.getElementById("popupBtn");
+    popupBtn.onclick = function(){
+    popup.style.display = "block";
+    }
+    var closeBtn = document.getElementsByClassName("close")[0];
+    closeBtn.onclick = function(){
+    popup.style.display = "none";
+    }
+    window.onclick = function(event){
+        if (event.target == popup) {
+        popup.style.display = "none";
+    }
+    }
+    var popupForm = document.getElementById("popup-form");
+    popupForm.onsubmit = function(event){
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        alert("Message sent to admin: " + message);
+        popup.style.display = "none";
+    }
+    </script>
+</body>

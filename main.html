@@ -7,6 +7,7 @@
     <title>Web Truyen</title>
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/bxh.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 </head>
@@ -14,63 +15,171 @@
     <div class="app">
         <header class="header">
             <nav class="header__navbar">
-                <div class="header__navbar-item header__navbar-bars">
+
+                <div class="sidebar__bars">
                     <i class="fa-solid fa-bars"></i>
                 </div>
 
-                <div class="header__navbar-item header__navbar-find">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="header__navbar-sidebar">
+                    <div class="sidebar__item sidebar__header">
+                        <div class="sidebar__webname webname">
+                            <a href="main.html" style=" font-size: 2.5em;
+                                                font-weight: 900;
+                                                text-decoration: none;
+                                                color: palevioletred;
+                                ">210Comic</a>
+                        </div>
+
+                        <div class="sidebar__item sidebar__close">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar__item sidebar__list">
+                        <li><a href="">Truyện Tranh</a></li>
+                        <li><a href="">Truyện Chữ</a></li>
+                        <li><a href="">Lịch Sử</a></li>
+                        <li><a href="page/bxh.html">Xếp Hạng</a></li>
+                        <li><a href="">Theo Dõi</a></li>
+                    </div>
                 </div>
 
-                <div class="header__navbar-item header__navbar-webname">
-                    <h1>Web's Name</h1>
+                <div class="header__navbar-item header__navbar-search ">
+                    <form action="" class="search" >
+                        <input type="search" placeholder="Type something..." class="search__input">
+
+                        <div class="search__btn">
+                            <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                            <i class="fa-solid fa-xmark search__close"></i>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="header__navbar-item webname">
+                    <a href="main.html" style=" font-size: 2.5em;
+                                                font-weight: 900;
+                                                text-decoration: none;
+                                                color: palevioletred;
+                                ">210Comic</a>
                 </div>
 
                 <div class="header__navbar-item header__navbar-auth">
                     <button class="auth__icon"><i class="fa-solid fa-user"></i></button>
+                </div>
+
+                <div class="header__navbar-dropmenu">
+                    <li><a href="page/auth.html">User</a></li>
+                    <li class="authPopUp">Login/Register</li>
+                    <li><a href="">Logout</a></li>
                 </div>
                 
             </nav>
         </header>
 
         <div class="container">
+            <div class="type">
+                <div class="type__bar">
+                    <a style="width: 50px;" class="type__item" href=""><i class="fa-solid fa-house"></i></a>
+                    <a class="type__item" href="">Hot</a>
+                    <a class="type__item" href="">Thể Loại</a>
+                    <a class="type__item" href="">Lịch Sử</a>
+                    <a class="type__item" href="">Thành Tựu</a>
+                    <a class="type__item" href="">Góp Ý</a>
+                    <a class="type__item" href="">Donate</a>
+                    <a style="width: 100px;" class="type__item" href="">Về Chúng Tôi</a>
+                </div>
+            </div>
             <div class="container__webbody">
-                    <div class="container__webbody-box">
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 1"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 2"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 3"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 4"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
+                    <div class="container__webbody-box ">
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url(assets/img/ta-khong-muon-trung-sinh-dau.png)"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        <a class="container__webbody-tag" href="#">
+                            <div class="tag__img" style="background-image: url()"></div>
+                            <h2>Ten truyen</h2>
+                            <h4 class="new-chap">Chap 3</h4>
+                            <h4 class="new-chap">Chap 2</h4>
+                            <h4 class="new-chap">Chap 1</h4>
+                        </a>
+                        
+                        
+                        
                     </div>
-                    <div class="container__webbody-box">
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 5"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 6"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 7"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
-                        <div class="container__webbody-tag">
-                            <button class="tag__btn" type="submit"><img src="" alt="Truyện 8"/></button>
-                            <a class="tag__btn-text" data-jtip="" href=""><h3>Tên truyện </h3></a>
-                        </div>
-                    </div>
+                    
                     <div class="omenu">
                         <a class="pagelink" href=""><h2></h2></a>
                         <a class="pagelink" href=""><h2>1</h2></a>
@@ -86,57 +195,58 @@
                         <a class="pagelink" href=""><h2></h2></a>
                     </div>
 
-                    <div class="container__bxh">
-                        <table>
-                            <h1>Bảng xếp hạng</h1>
-        
-                            <tbody>
-                                <tr class="container__bxh-title">
-                                    <th class="container__bxh-rank">Rank</th>
-                                    <th class="container__bxh-name">Name</th>
-                                    <th class="container__bxh-author">Author</th>
-                                    <th class="container__bxh-score">Score</th>
-                                    <th class="container__bxh-status">Status</th>
-                                </tr>
-        
-                                <tr>
-                                    <td class="container__bxh-rank">1</td>
-                                    <td>Attack on Titan: Final Season - The Final Chapters</td>
-                                    <td>Isayama Hajime</td>
-                                    <td>9.21</td>
-                                    <td class="container__bxh-status"><button>Add to list</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="container__bxh-rank">2</td>
-                                    <td>Fullmetal Alchemist: Brotherhood</td>
-                                    <td>Arakawa Hiromu</td>
-                                    <td>9.11</td>
-                                    <td class="container__bxh-status"><button>Add to list</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="container__bxh-rank">3</td>
-                                    <td>Bleach: Thousand-Year Blood War</td>
-                                    <td>Kubo Taito</td>
-                                    <td>9.09</td>
-                                    <td class="container__bxh-status"><button>Add to list</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="container__bxh-rank">4</td>
-                                    <td>Steins;Gate</td>
-                                    <td>Mizoguchi Takeshi</td>
-                                    <td>9.08</td>
-                                    <td class="container__bxh-status"><button>Add to list</button></td>
-                                </tr>
-                                <tr>
-                                    <td class="container__bxh-rank">5</td>
-                                    <td>Gintama Season 4</td>
-                                    <td>Hideaki Sorachi</td>
-                                    <td>9.07</td>
-                                    <td class="container__bxh-status"><button>Add to list</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+            </div>
+
+            <div class="container__bxh">
+                <h1 id="ranking-manga-title">Ranking of Manga</h1>
+                    <table class="ranking-manga">
+                        <thead>
+                            <tr>
+                                <th class="rank">Rank</th>
+                                <th class="name">Name</th>
+                                <th class="author">Author</th>
+                                <th class="score">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://drive.google.com/u/0/uc?id=1FXKKCMadFLSFg8U-nHa42VMVWNZqMYrx&export=download" alt="Rank icon" class="rankimggr"></td>
+                                <td class="namegr">
+                                    <img src="https://seeklogo.com/images/D/dragon-ball-super-logo-5340BC6DC4-seeklogo.com.png" alt="Manga icon" class="nameimggr">
+                                    Dragon Ball
+                                </td>
+                                <td>Toriyama Akira</td>
+                                <td class="scoregr">9.89</td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://drive.google.com/u/0/uc?id=1W6govzm6ZTazheIYRkdQlri8DezRkdyy&export=download" alt="Rank icon" class="rankimggr"></td>
+                                <td class="namegr">
+                                    <img src="https://inkythuatso.com/uploads/thumbnails/800/2021/12/one-piece-logo-inkythuatso-16-09-46-48.jpg" alt="Manga icon" class="nameimggr">
+                                    One Piece
+                                </td>
+                                <td>Eiichiro Oda</td>
+                                <td class="scoregr">9.76</td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://drive.google.com/u/0/uc?id=1F7psEYA3Qb-2cOcoPJal4ZtjIpA3nft-&export=download" alt="Rank icon" class="rankimggr"></td>
+                                <td class="namegr">
+                                    <img src="https://w0.peakpx.com/wallpaper/729/445/HD-wallpaper-naruto-logo-naruto-anime.jpg" alt="Manga icon" class="nameimggr">
+                                    Naruto
+                                </td>
+                                <td>Masashi Kishimoto</td>
+                                <td class="scoregr">9.68</td>
+                            </tr>
+                            <tr>
+                                <td class="rankgr">4</td>
+                                <td class="namegr">
+                                    <img src="https://seeklogo.com/images/B/bleach-logo-F81A422109-seeklogo.com.png" alt="Manga icon" class="nameimggr">
+                                    Bleach
+                                </td>
+                                <td>Tite Kubo</td>
+                                <td class="scoregr">9.67</td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
         </div>
     </div>
