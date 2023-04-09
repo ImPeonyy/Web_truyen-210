@@ -23,7 +23,7 @@
                 <div class="header__navbar-sidebar">
                     <div class="sidebar__item sidebar__header">
                         <div class="sidebar__webname webname">
-                            <a href="main.html" style=" font-size: 2.5em;
+                            <a href="main.php" style=" font-size: 2.5em;
                                                 font-weight: 900;
                                                 text-decoration: none;
                                                 color: palevioletred;
@@ -41,7 +41,7 @@
                         <li><a href="">Lịch Sử</a></li>
                         <li><a href="page/bxh.html">Xếp Hạng</a></li>
                         <li><a href="">Theo Dõi</a></li>
-                        <li><a id="open-modal-btn">Điều khoản và chính sách bảo mật</a></li>
+                        <li><a id="open-modal-btn" style="cursor: pointer;">Điều khoản và chính sách bảo mật</a></li>
                     </div>
                 </div>
 
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="header__navbar-item webname">
-                    <a href="main.html" style=" font-size: 2.5em;
+                    <a href="main.php" style=" font-size: 2.5em;
                                                 font-weight: 900;
                                                 text-decoration: none;
                                                 color: palevioletred;
@@ -75,9 +75,7 @@
                 </div>
                 
             </nav>
-        </header>
 
-        <div class="container">
             <div class="type">
                 <div class="type__bar">
                     <a style="width: 50px;" class="type__item" href=""><i class="fa-solid fa-house"></i></a>
@@ -87,95 +85,30 @@
                     <a class="type__item" href="">Thành Tựu</a>
                     <a class="type__item" href="">Góp Ý</a>
                     <a class="type__item" href="">Donate</a>
-                    <a style="width: 100px;" class="type__item" id="open-modal-btn2">Về Chúng Tôi</a>
+                    <a style="width: 100px; cursor: pointer;" class="type__item" id="open-modal-btn2">Về Chúng Tôi</a>
                 </div>
             </div>
+        </header>
+
+        <div class="container">
             <div class="container__webbody">
                     <div class="container__webbody-box ">
-                        <a class="container__webbody-tag" href="page/truyen1.html">
-                            <div class="tag__img" style="background-image: url(assets/img/ta-khong-muon-trung-sinh-dau.png)"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
-                        <a class="container__webbody-tag" href="#">
-                            <div class="tag__img" style="background-image: url()"></div>
-                            <h2>Ten truyen</h2>
-                            <h4 class="new-chap">Chap 3</h4>
-                            <h4 class="new-chap">Chap 2</h4>
-                            <h4 class="new-chap">Chap 1</h4>
-                        </a>
+                            <?php
+                                require('./php/connect.php');
+                                $sql = "SELECT * FROM truyen";
+                                $result = mysqli_query($conn, $sql);
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        echo "<a class='container__webbody-tag' href='page/truyen1.html'>";
+                                        echo "<div class='tag__img' style='background-image: url(assets/img/".$row['truyen_hinh-dai-dien'].")'></div>";
+                                        echo "<div class='tag__title'><h2>" . $row['truyen_ten'] . "</h2></div>";
+                                        echo "<h4 class='new-chap'>Chap 3</h4>";
+                                        echo "<h4 class='new-chap'>Chap 2</h4>";
+                                        echo "<h4 class='new-chap'>Chap 1</h4>";
+                                        echo "</a>";
+                                    }
+                                }
+                            ?>
                         
                         
                         
@@ -280,27 +213,26 @@
                     <div class="auth-form__login">
                         <h2>Login</h2>
             
-                        <form action="#">
+                        <form action="./php/getLogin.php" method="GET">
                             <div class="input-box">
                                 <span class="input-box__icon"><i class="fa-solid fa-envelope"></i></span>
-                                <input type="email" required>
-                                <label> Email</label>
+                                <input type="text" name="username-login" required>
+                                <label> Username</label>
                             </div>
             
                             <div class="input-box">
                                 <span class="input-box__icon"><i class="fa-solid fa-lock"></i></span>
-                                <input type="password" required>
+                                <input type="password" name="password-login" required>
                                 <label> Password</label>
                             </div>
             
                             <div class="remember-forgot">
                                 <input type="checkbox" class="remember-forgot__checkbox" >
                                 <label> Remember me</label>
-            
                                 <a href="#" class="remember-forgot__forgot">Forgot Password?</a>
                             </div>
             
-                            <button type="submit" class="btn">Login</button>
+                            <button type="submit" class="btn" name="submit">Login</button>
             
                             <div class="login-register">
                                 <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
@@ -311,31 +243,31 @@
                     <div class="auth-form__regis">
                         <h2>Registration</h2>
             
-                        <form action="#">
+                        <form action="./php/getRegis.php" method="GET">
                             <div class="input-box">
                                 <span class="input-box__icon"><i class="fa-solid fa-user"></i></span>
-                                <input type="text" required>
+                                <input type="text" name="username-regis" required>
                                 <label> Username    </label>
                             </div>
 
                             <div class="input-box">
                                 <span class="input-box__icon"><i class="fa-solid fa-envelope"></i></span>
-                                <input type="email" required>
+                                <input type="email" name="email" required>
                                 <label> Email</label>
                             </div>
             
                             <div class="input-box">
                                 <span class="input-box__icon"><i class="fa-solid fa-lock"></i></span>
-                                <input type="password" required>
+                                <input type="password" name="password-regis" required>
                                 <label> Password</label>
                             </div>
             
                             <div class="remember-forgot">
-                                <input type="checkbox" class="remember-forgot__checkbox" required>
+                                <input type="checkbox" required>
                                 <label> Đồng ý với điều khoản dịch vụ</label>
                             </div>
             
-                            <button type="submit" class="btn">Register</button>
+                            <button type="submit" class="btn" name="submit">Register</button>
             
                             <div class="login-register">
                                 <p>Already have an account? <a href="#" class="login-link">Login</a></p>

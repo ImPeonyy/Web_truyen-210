@@ -2,7 +2,7 @@
 .header{
     position: fixed;
     top: 0;
-    height: 80px;
+    height: 120px;
     width: 100%;
     background-image: linear-gradient(0, #cbe6f7, #acd0f5);
     z-index: 1000;
@@ -247,6 +247,7 @@
     overflow: hidden;
     transform: scale(0);
     transition: transform 0.2s ease, height 0.2s ease;
+    z-index: 999;
 }
 
 .auth-form.active-popup{
@@ -439,8 +440,10 @@ h1{
     height: 100%;
     left: 10%;
     padding: 0 15px;
+    padding-top: 30px;
     background-color: #fff;
     box-sizing: border-box;
+    padding-left: 30px;
 
 }
 .container__webbody-tag{
@@ -450,12 +453,11 @@ h1{
     width: 23%;
     min-width: fit-content;
     margin-bottom: 10px;
-    margin-left: 10px;
     text-decoration: none;
     color: #000;
-    margin-top: 35px;
-    background-color: #afd2f5;
+    margin-top: 35px;   
     padding-bottom: 5px;
+    max-width: 194.9px; 
 }
 
 .container__webbody-box{
@@ -464,17 +466,29 @@ h1{
 }
 
 .tag__img{
-    width: 80%;
     height: 66.67%;
     padding-top: 100%;
+    max-width: 90%;
     background-color: palevioletred;
     margin-left: 10%;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom: 25%;
+    border: #dddddd 1px solid;
+    border-radius: 2px;
 }
 
-.container__webbody-tag h2{
-    margin-left: 10%;
+.tag__title{
+    width: 80%;
+    max-width: 160px;
+    margin-left: 10%;  
+    margin-top: 10px;
+
+}
+
+.tag__title h2{
+    width: 80%;
+    word-wrap: break-word;
 }
 
 
@@ -484,9 +498,6 @@ h1{
 
 .new-chap + .new-chap{
     margin-top: 5px;
-}
-.container__webbody-tag + .container__webbody-tag{
-    margin-left: 10px;
 }
 .omenu{
     margin-left: 13%;
@@ -506,7 +517,11 @@ h1{
     
 
 .type{
+    position: absolute;
+    bottom: 0;
     height: 40px;
+    width: 100%;
+    background-color: #ebebeb;
 }
 
 .type__bar{
