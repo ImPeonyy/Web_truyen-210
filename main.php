@@ -100,7 +100,7 @@
                                 if (mysqli_num_rows($result) > 0) {
                                     while ($row = mysqli_fetch_assoc($result)) {
                                         echo "<a class='container__webbody-tag' href='page/truyen1.html'>";
-                                        echo "<div class='tag__img' style='background-image: url(assets/img/".$row['truyen_hinh-dai-dien'].")'></div>";
+                                        echo "<div class='tag__img' style='background-image: url(".$row['truyen_hinh_dai_dien'].")'></div>";
                                         echo "<div class='tag__title'><h2>" . $row['truyen_ten'] . "</h2></div>";
                                         echo "<h4 class='new-chap'>Chap 3</h4>";
                                         echo "<h4 class='new-chap'>Chap 2</h4>";

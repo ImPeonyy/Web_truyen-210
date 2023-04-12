@@ -1,19 +1,21 @@
 <?php
-    require'connect.php';
+    require 'connect.php';
     if (isset($_GET['submit'])) {
         echo "Đã nhận được dữ liệu";
         echo "<pre>";
         print_r($_GET);
-        $name = $_GET['username-regis'];
-        $password = $_GET['password-regis'];
+        $name = $_GET['username-login'];
+        $password = $_GET['password-login'];
+
+        $sql = "SELECT 'username', 'password' FROM account WHERE username = '$name' AND password = '$password'";
 
 
 
         $result = mysqli_query($conn, $sql);
         if ($result) {
-            echo "Thêm dữ liệu thành công";
+            header("Location: ../page/auth.html");
         } else {
-            echo "Thêm dữ liệu thất bại";
+            echo "Tài khoản hoặc mật khẩu sai !";
         }
     }
 ?>

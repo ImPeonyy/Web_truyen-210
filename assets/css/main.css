@@ -194,6 +194,7 @@
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
+    z-index: 999;
 }
 
 .header__navbar-dropmenu.open{
