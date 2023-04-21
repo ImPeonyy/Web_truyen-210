@@ -1,0 +1,156 @@
+.interface{
+    position: absolute;
+    right: 225px;
+    margin-top: 100px;
+    height: 1000px;
+    width: 1000px;
+    background-color: gray;
+}
+.describe{
+    display: flex;
+    align-items: center;
+  }
+  
+.describe{
+    display:flex;
+}
+.describe-cover_image img{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+}
+.describe-text{
+    margin-bottom: 10px;
+    font-size: 24px;
+    margin-left: 40px;
+    position: relative;
+    right:0;
+}
+.describe-text p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 15px;
+  }
+
+.describe-text_button-follow{
+    height: 40px;
+    width: 70px;
+    background-color: greenyellow;
+}
+.describe-text_button-like{
+    height: 40px;
+    width: 70px;
+    background-color: cyan;
+}
+.describe-text-box{
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    font-size: 24px;
+}
+/*listbox*/
+.listbox {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.scroll_listbox {
+    width: 650px;
+    height: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+}
+  
+.scroll_listbox option {
+    font-size: 16px;
+    padding: 5px;
+}
+
+/*comment*/
+.comment-container {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+}
+  
+.comment-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+  
+textarea {
+    border: none;
+    resize: none;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+input[type=file] {
+    display: none;
+}
+  
+label[for=file-input] {
+    background-color: #ddd;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+label[for=file-input]:hover {
+    background-color: #ccc;
+}
+  
+i.fa.fa-picture-o {
+    margin-right: 5px;
+}
+  
+.comment-actions {
+    display: flex;
+    align-items: center;
+}
+  
+  .btn-like,
+  .btn-dislike,
+  .btn-emote {
+    border: none;
+    background-color: transparent;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+  
+.btn-like:hover,
+.btn-dislike:hover,
+.btn-emote:hover {
+    color: #ff6f61;
+}
+  
+i.fa.fa-thumbs-up,
+i.fa.fa-thumbs-down,
+i.fa.fa-smile-o,
+i.fa.fa-frown-o,
+i.fa.fa-heart-o {
+    margin-right: 5px;
+}
+  
+.emotes {
+    display: flex;
+}
+  
+.btn-emote {
+    font-size: 24px;
+}

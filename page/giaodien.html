@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/font/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/giaodien.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__navbar">
+
+            <div class="sidebar__bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="header__navbar-sidebar">
+                <div class="sidebar__item sidebar__header">
+                    <div class="sidebar__webname webname">
+                        <a href="../main.php" style=" font-size: 2.5em;
+                                            font-weight: 900;
+                                            text-decoration: none;
+                                            color: palevioletred;
+                            ">210Comic</a>
+                    </div>
+
+                    <div class="sidebar__item sidebar__close">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar__item sidebar__list">
+                    <li><a href="">Truyện Tranh</a></li>
+                    <li><a href="">Truyện Chữ</a></li>
+                    <li><a href="">Lịch Sử</a></li>
+                    <li><a href="../page/bxh.html">Xếp Hạng</a></li>
+                    <li><a href="">Theo Dõi</a></li>
+                    <li><a id="open-modal-btn">Điều khoản và chính sách bảo mật</a></li>
+                </div>
+            </div>
+
+            <div class="header__navbar-item header__navbar-search ">
+                <form action="" class="search" >
+                    <input type="search" placeholder="Type something..." class="search__input">
+
+                    <div class="search__btn">
+                        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+                        <i class="fa-solid fa-xmark search__close"></i>
+                    </div>
+                </form>
+            </div>
+
+            <div class="header__navbar-item webname">
+                <a href="../main.php" style=" font-size: 2.5em;
+                                            font-weight: 900;
+                                            text-decoration: none;
+                                            color: palevioletred;
+                            ">210Comic</a>
+            </div>
+
+            <div class="header__navbar-item header__navbar-auth">
+                <button class="auth__icon"><i class="fa-solid fa-user"></i></button>
+            </div>
+
+            <div class="header__navbar-dropmenu">
+                <li><a href="../page/auth.html">User</a></li>
+                <li class="authPopUp">Login/Register</li>
+                <li><a href="">Logout</a></li>
+            </div>
+            
+        </nav>
+    </header>
+    <div class="interface">
+        <div class="describe">
+            <div class="describe-cover_image"><img src="https://upload.wikimedia.org/wikipedia/vi/2/24/Chainsawman.jpg"/></div>
+            <div class="describe-text">
+                <h1>TÊN TRUYỆN</h1>
+                <label class="describe-text_name">Tên khác: </label><a class="describe-text_auth" href="">Tên khác</a><br>
+                <label class="describe-text_auth">Tác giả: </label><a class="describe-text_auth" href="">Tên tác giả</a><br>
+                <label class="describe-text_status">Tình trạng: </label><a class="describe-text_status" href="">Tình trạng truyện</a><br>
+                <button class="describe-text_button-follow"><p>Theo dõi<p></button> 
+                <button class="describe-text_button-like"><p>Thích<p></button>
+                <p class="describe-text-box">đây là ô mô tả</p>
+            </div>
+        </div>
+        <div class="listbox">
+            <select class="scroll_listbox" size="5">
+                <option value="1">Chương 1</option>
+                <option value="2">Chương 2</option>
+                <option value="3">Chương 3</option>
+                <option value="4">Chương 4</option>
+                <option value="5">Chương 5</option>
+                <option value="6">Chương 6</option>
+                <option value="7">Chương 7</option>
+                <option value="8">Chương 8</option>
+                <option value="9">Chương 9</option>
+                <option value="10 ">Chương 10</option>
+            </select>
+        </div>
+        <div class="comment-container">
+            <div class="comment-input">
+              <textarea placeholder="Viết bình luận của bạn..."></textarea>
+            </div>
+            <div class="comment-actions">
+                <button class="btn-like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Thích</button>
+                <button class="btn-dislike"><i class="fa fa-thumbs-down" aria-hidden="true"></i> Không thích</button>            
+              <div class="emotes">
+                <button class="btn-emote"><i class="fa fa-heart-o" aria-hidden="true">❤</i></button>
+                <button class="btn-emote"><i class="fa fa-smile-o" aria-hidden="true">☺</i></button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/navbar.js"></script>
+</body>
+</html>
