@@ -98,7 +98,6 @@
                             $item_per_page = 8;
                             $page = null;
                             $current_page = !empty($_GET['page']) ? $_GET['page'] : 1;
-                            echo $current_page;
                             $offset = ($current_page - 1) * $item_per_page;
                             $total_item = mysqli_query($conn, "SELECT * FROM truyen");
                             $total_item = $total_item->num_rows;
@@ -310,8 +309,10 @@
 
         <footer class="footer">
             <div class="footer__back">
-                <div class="footer__item"><a href="">Điều khoản dịch vụ</a></div>
-                <div class="footer__item"><a href="">Chính sách bảo mật</a></div>
+                <div class="footer__item" style="padding: 30px 0 10px 0;"><h2>Contact for work, copyright and more:</h2></div>
+                <div class="footer__item hover" style="padding-bottom: 10px;;"><a href="">ad.210comic@gmail.com</a></div>
+                <div class="footer__item hover"><a href="">Điều khoản dịch vụ</a></div>
+                <div class="footer__item hover"><a href="">Chính sách bảo mật</a></div>
                 <div class="footer__item"><p>© 2023 - 210Comic.net</p></div>
             </div>
         </footer>
